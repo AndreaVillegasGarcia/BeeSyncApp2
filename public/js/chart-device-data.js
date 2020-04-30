@@ -8,7 +8,7 @@ $(document).ready(() => {
 
   // A class for holding the last N points of telemetry for a device
   class DeviceData {
-    constructor(deviceId) {
+    constructor() {
       this.deviceId = deviceId;
       this.maxLen = 50;
       this.timeData = new Array(this.maxLen);
@@ -48,6 +48,10 @@ $(document).ready(() => {
 
     getDevicesCount() {
       return this.devices.length;
+    }
+
+    formatData(){
+
     }
   }
 
