@@ -30,12 +30,12 @@ $(document).ready(() => {
   }
 
   const chartData = {
-    labels: [],
+    labels: [1,2,3,4],
     datasets: [
       {
-        data: [],
+        data: [23.1,24.1,32.2,32.0],
         fill: true,
-        label: 'Temperature',
+        label: 'Temp #D1',
         yAxisID: 'Temperature',
         borderColor: 'rgba(255, 204, 0, 1)',
         pointBoarderColor: 'rgba(255, 204, 0, 1)',
@@ -45,15 +45,29 @@ $(document).ready(() => {
         spanGaps: false,
       },
       {
-        fill: false,
-        label: 'Humidity',
-        data: [],
-        yAxisID: 'Humidity',
-        borderColor: 'rgba(24, 120, 240, 1)',
-        pointBoarderColor: 'rgba(24, 120, 240, 1)',
-        backgroundColor: 'rgba(24, 120, 240, 0.4)',
-        pointHoverBackgroundColor: 'rgba(24, 120, 240, 1)',
-        pointHoverBorderColor: 'rgba(24, 120, 240, 1)',
+        fill: true,
+        label: 'Temp #D2',
+        data: [24.1,32.2,32.0,23.1],
+        yAxisID: 'Temperature',
+        backgroundColor: 'rgba(148,159,177,0.2)',
+        borderColor: 'rgba(148,159,177,1)',
+        pointBackgroundColor: 'rgba(148,159,177,1)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+        spanGaps: true,
+      },
+      {
+        fill: true,
+        label: 'Temp #D3',
+        data: [32.2,32.0,23.1,24.1],
+        yAxisID: 'Temperature',
+        backgroundColor: 'rgba(77,83,96,0.2)',
+        borderColor: 'rgba(77,83,96,1)',
+        pointBackgroundColor: 'rgba(77,83,96,1)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(77,83,96,1)',
         spanGaps: true,
       }
     ]
@@ -70,15 +84,6 @@ $(document).ready(() => {
           display: true,
         },
         position: 'left',
-      },
-      {
-        id: 'Humidity',
-        type: 'linear',
-        scaleLabel: {
-          labelString: 'Humidity (%)',
-          display: true,
-        },
-        position: 'right',
       }]
     }
   };

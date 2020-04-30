@@ -11,21 +11,31 @@
     <script src="js/chart-device-data.js" type="text/javascript" charset="utf-8"></script>
     <link href="css/style.css" rel="stylesheet" />
 
-    <title>Temperature &amp; Humidity Real-time Data</title>
+    <title>RT DeviceInfo</title>
 </head>
 
-<body>
-    <h1 class="flexHeader">
-        <!-- <span>
-            <span id="deviceCount">0 devices</span>
-            <select id="listOfDevices" class="select_box"></select>
-        </span> -->
-        <span>Temperature & Humidity Real-time Data</span>
-    </h1>
-    <div>
-        <canvas id="iotChart"></canvas>
+<body style="padding: 0; width: 100%;">
+    <header style="background-color: #F2F2F2; padding:1%; position: sticky; top: 0;">
+        <img style="width: 15%; margin-right: 70%;" src="assets/Beesync.png"/>
+    </header>
+    <div style="margin: auto;">
+        <h1 style="margin-top: 10%;">
+            <span>Temperature</span>
+        </h1>
     </div>
-      
+    <div style="width: 60%; margin: auto;">
+        <canvas id="iotChart"></canvas>
+    </div>   
+    <div style="width: 60%; margin: auto;">
+        <canvas id="iotChart2"></canvas>
+    </div>    
+    <div style="width: 60%; margin: auto;">
+        <canvas id="iotChart3"></canvas>
+    </div>   
+    <footer style="background-color:lightgray; bottom: 0; width: 100%;">
+        <p style="color:white ;margin: 0px; bottom: 0; position: fixed">Developed by Group 4</p>
+    </footer>
 </body>
+
 
 </html>
